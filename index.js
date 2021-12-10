@@ -23,7 +23,7 @@ const authRoutes = require('./routes/auth');
 // route middlewares
 app.use('/api/user', authRoutes);
 
-// iniciar server
+// iniciando el server
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
     console.log(`servidor andando en: ${PORT}`)
